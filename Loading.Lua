@@ -8,10 +8,13 @@ console = uis.GamepadEnabled
 pc = uis.KeyboardEnabled
 mobile = uis.TouchEnabled
 if pc then
+print("pc version")
 loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/49db5f22757c66e6c34781bf352af69d/raw/ae430756be6010cab69b3252c7a6a034c15c3f4f/pc%2520loader"))()
 elseif mobile then
+print("mobile version")
  loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/89b5f8dcec9ce569c25ff1b060121fb4/raw/b6f11c9e255a9f507c271a0d7880eb95ce2b3307/mobile%2520loader"))()
 elseif console then
+print("wth")
  Notification:Notify(
     {Title = "skibi toilet war", Description = "WHAT THE HELL BRO YOU EXECUTED SCRIPT ON CONSOLE?"},
     {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
