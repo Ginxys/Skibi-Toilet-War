@@ -3,9 +3,9 @@ local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/
 
  Notification:Notify(
     {Title = "skibi toilet war", Description = "Checking device"},
-    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
+    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 2, Type = "default"}
 )
-	
+wait(2)	
 player = game.Players.LocalPlayer
 uis = game:GetService("UserInputService")
 console = uis.GamepadEnabled
