@@ -1,27 +1,19 @@
 local NotificationHolder = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Module.Lua"))()
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 
-Notification:Notify(
-    {Title = "Skibi toilet war", Description = "Checking the game.."},
-    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 3, Type = "default"}
-)
-wait(3)
-local gameid = game.PlaceId
-
-if(gameid == 13680907839) then
-Notification:Notify(
-    {Title = "Skibi toilet war", Description = "Game founded!"},
-    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 1, Type = "default"}
-)
-wait(1)
-Notification:Notify(
-    {Title = "Skibi toilet war", Description = "Loading script that taking few seconds"},
-    {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 1, Type = "default"}
-)	
-loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/aa42aedec70843c20397eb5266b554d4/raw/4381c000918d56f1805a267ecd433d1e8e084c1d/secret%2520gist"))()
-	else
-	Notification:Notify(
-    {Title = "Skibi toilet war", Description = "Wrong Game!!"},
+	
+player = game.Players.LocalPlayer
+uis = game:GetService("UserInputService")
+console = uis.GamepadEnabled
+pc = uis.KeyboardEnabled
+mobile = uis.TouchEnabled
+if pc then
+loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/49db5f22757c66e6c34781bf352af69d/raw/ae430756be6010cab69b3252c7a6a034c15c3f4f/pc%2520loader"))()
+elseif mobile then
+ loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/89b5f8dcec9ce569c25ff1b060121fb4/raw/b6f11c9e255a9f507c271a0d7880eb95ce2b3307/mobile%2520loader"))()
+elseif console then
+ Notification:Notify(
+    {Title = "skibi toilet war", Description = "WHAT THE HELL BRO YOU EXECUTED SCRIPT ON CONSOLE?"},
     {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
 )
 end
