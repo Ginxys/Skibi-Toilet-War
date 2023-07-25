@@ -17,7 +17,7 @@ print("pc version")
     {Title = "skibi toilet war", Description = "device found! (PC)"},
     {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
 )
-loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/49db5f22757c66e6c34781bf352af69d/raw/ae430756be6010cab69b3252c7a6a034c15c3f4f/pc%2520loader"))()
+loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/49db5f22757c66e6c34781bf352af69d/raw/e5c70e1cd59745c15a9c3d3abeb2c519acc96d6c/pc%2520loader"))()
 elseif mobile then
 print("mobile version")
  Notification:Notify(
