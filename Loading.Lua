@@ -24,7 +24,7 @@ print("mobile version")
     {Title = "skibi toilet war", Description = "device found! (Mobile)"},
     {OutlineColor = Color3.fromRGB(80, 80, 80),Time = 5, Type = "default"}
 )
- loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/89b5f8dcec9ce569c25ff1b060121fb4/raw/e94e23c1a8bb74e09786f20343ff87097fe3aa96/mobile%2520loader"))()
+ loadstring(game:HttpGet("https://gist.githubusercontent.com/Ginxys/89b5f8dcec9ce569c25ff1b060121fb4/raw/79d0343ad0757db23d3d363691c2f1a604dced7e/mobile%2520loader"))()
 elseif console then
 print("wth")
  Notification:Notify(
